@@ -40,4 +40,4 @@ history = model.fit(
     validation_data=(x_test, y_test)
 )
 
-model.save("emnist_model.h5")
+model.save("HTR.keras")
