@@ -1,6 +1,5 @@
 import scipy.io
-import tensorflow
-from tensorflow.keras import layers, models
+from keras import layers, models
 
 data = scipy.io.loadmat("model/data/emnist-balanced.mat")
 
