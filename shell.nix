@@ -5,6 +5,7 @@ pkgs.mkShell {
     (pkgs.python312.withPackages(p: with p; [
       scipy
       keras
+      tkinter
     ]))
   ];
 }
