@@ -1,3 +1,4 @@
 model/data/
+__pycache__/
 *.h5
 *.keras
