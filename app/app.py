@@ -1,7 +1,9 @@
 import tkinter
+import aipi
 
 def upload_image():
-    pass
+    global ai_respone
+    ai_respone.set(aipi.get_response())
 
 root = tkinter.Tk()
 root.title("HTR Demo")
@@ -16,6 +18,7 @@ button.pack(side="left", padx=10, pady=10)
 output = tkinter.Frame(root)
 output.pack(fill="x", side="bottom")
 
+global ai_respone
 ai_respone = tkinter.StringVar(value="...")
 response_label = tkinter.Label(
     output,
