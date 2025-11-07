@@ -6,6 +6,7 @@ pkgs.mkShell {
       scipy
       keras
       tkinter
+      pillow
     ]))
   ];
 }
