@@ -6,6 +6,7 @@ import aipi
 file_types = [("Image files", "*jpg *png")]
 gc_safe_zone = []
 def upload_image():
+    global path
     path = filedialog.askopenfilename(title="Select Image", filetypes=file_types)
     if not path:
         return
@@ -17,10 +18,13 @@ def upload_image():
         gc_safe_zone.append(tk_image)
         image_label.config(image=tk_image)
 
-        global ai_respone
-        ai_respone.set(aipi.get_response())
     except Exception:
         messagebox.showerror("Could not open image")
+
+def get_response():
+    global ai_respone
+    global path
+    ai_respone.set(aipi.get_response(path))
 
 root = tkinter.Tk()
 root.title("HTR Demo")
@@ -29,8 +33,11 @@ root.geometry("900x720")
 header = tkinter.Frame(root)
 header.pack(fill="x", side="top")
 
-button = tkinter.Button(header, text="Upload Image", command=upload_image)
-button.pack(side="left", padx=10, pady=10)
+upload_button = tkinter.Button(header, text="Upload Image", command=upload_image)
+upload_button.pack(side="left", padx=10, pady=10)
+
+response_button = tkinter.Button(header, text="Analyze", command=get_response)
+response_button.pack(side="left", padx=10, pady=10)
 
 image_label = tkinter.Label(root)
 image_label.pack(fill="both", padx=10, pady=10)

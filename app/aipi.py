@@ -1,2 +1,2 @@
-def get_response():
-    return "test"
+def get_response(path):
+    return path
