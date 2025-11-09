@@ -7,6 +7,7 @@ pkgs.mkShell {
       keras
       tkinter
       pillow
+      opencv4
     ]))
   ];
 }

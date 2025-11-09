@@ -5,6 +5,7 @@ import aipi
 
 file_types = [("Image files", "*jpg *png")]
 gc_safe_zone = []
+
 def upload_image():
     global path
     path = filedialog.askopenfilename(title="Select Image", filetypes=file_types)
@@ -22,8 +23,6 @@ def upload_image():
         messagebox.showerror("Could not open image")
 
 def get_response():
-    global ai_respone
-    global path
     ai_respone.set(aipi.get_response(path))
 
 root = tkinter.Tk()
