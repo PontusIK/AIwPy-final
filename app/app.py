@@ -44,6 +44,9 @@ image_label.pack(fill="both", padx=10, pady=10)
 output = tkinter.Frame(root)
 output.pack(fill="x", side="bottom")
 
+output_label = tkinter.Label(output, text="Output:", anchor="w", padx=10)
+output_label.pack(side="left", padx=(10, 0), pady=10)
+
 global ai_respone
 ai_respone = tkinter.StringVar(value="...")
 response_label = tkinter.Label(
@@ -52,6 +55,6 @@ response_label = tkinter.Label(
     anchor="w",
     padx=10
 )
-response_label.pack(fill="both", padx=10, pady=10)
+response_label.pack(side="left", padx=0, pady=10)
 
 root.mainloop()
