@@ -35,10 +35,17 @@ Opencv4-processed images:
 
 ![P](images/pontus/char_0.png) ![o](images/pontus/char_1.png) ![n](images/pontus/char_2.png) ![t](images/pontus/char_3.png) ![u](images/pontus/char_4.png) ![s](images/pontus/char_5.png)
 
-
 ### Reflections
 
+The model isn't prefect but for a demonstration of HTR capabilities, it is good enough.<br/>
+The model isn't entirely at fault for failed predictions either. Part of the blame<br/>
+lies with the preprocessing done with opencv4, as it tends to accentuate features of othrewise<br/>
+featureless characters.<br/>
+*see the 2 'l's in "Hello"*
+
 ---
+
 #### Training data
+
 [EMNIST-balanced](https://www.nist.gov/itl/products-and-services/emnist-dataset): Cohen, G., Afshar, S., Tapson, J., & van Schaik, A. (2017). EMNIST: an extension<br/>
 of MNIST to handwritten letters. Retrieved from http://arxiv.org/abs/1702.05373
