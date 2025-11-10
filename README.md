@@ -25,7 +25,7 @@ Input image and result:
 
 Opencv4-processed images:
 
-![H](images/hello/char_0.png) ![e](images/hello/char_1.png) ![l](images/hello/char_2) ![l](images/hello/char_3) ![o](images/hello/char_4)
+![H](images/hello/char_0.png) ![e](images/hello/char_1.png) ![l](images/hello/char_2.png) ![l](images/hello/char_3.png) ![o](images/hello/char_4.png)
 
 Input image and result:
 
@@ -33,7 +33,7 @@ Input image and result:
 
 Opencv4-processed images:
 
-![P](images/pontus/char_0.png) ![o](images/pontus/char_1.png) ![n](images/pontus/char_2) ![t](images/pontus/char_3) ![u](images/pontus/char_4) ![s](images/pontus/char_5)
+![P](images/pontus/char_0.png) ![o](images/pontus/char_1.png) ![n](images/pontus/char_2.png) ![t](images/pontus/char_3.png) ![u](images/pontus/char_4.png) ![s](images/pontus/char_5.png)
 
 
 ### Reflections
