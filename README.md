@@ -11,9 +11,34 @@ a locally trained and executed HTR model.
 
 ### Execution
 
+Input image is segmented into individual characters and preprocessed<br/>
+to resemble training data using opencv4. Later the images are normalized to an<br/>
+array of float32 before being fed to the model.<br/>
+Predictions are made of every image and the one with highest confidence of each image<br/>
+is concatenated and displayed.
+
+#### Examples
+
+Input image and result:
+
+![Input image and result](images/hello/hello.png)
+
+Opencv4-processed images:
+
+![H](images/hello/char_0.png) ![e](images/hello/char_1.png) ![l](images/hello/char_2) ![l](images/hello/char_3) ![o](images/hello/char_4)
+
+Input image and result:
+
+![Input image and result](images/pontus/pontus.png)
+
+Opencv4-processed images:
+
+![P](images/pontus/char_0.png) ![o](images/pontus/char_1.png) ![n](images/pontus/char_2) ![t](images/pontus/char_3) ![u](images/pontus/char_4) ![s](images/pontus/char_5)
+
+
 ### Reflections
 
 ---
 #### Training data
-[EMNIST-balanced](https://www.nist.gov/itl/products-and-services/emnist-dataset): Cohen, G., Afshar, S., Tapson, J., & van Schaik, A. (2017). EMNIST: an extension</br>
+[EMNIST-balanced](https://www.nist.gov/itl/products-and-services/emnist-dataset): Cohen, G., Afshar, S., Tapson, J., & van Schaik, A. (2017). EMNIST: an extension<br/>
 of MNIST to handwritten letters. Retrieved from http://arxiv.org/abs/1702.05373
