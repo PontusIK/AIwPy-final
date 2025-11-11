@@ -43,6 +43,12 @@ lies with the preprocessing done with opencv4, as it tends to accentuate feature
 featureless characters.<br/>
 *see the 2 'l's in "Hello"*
 
+Improvements to the models performance could include but is not limited to:
+* adding more epochs to reduce underfitting.
+* expanding the dataset to include more diverse writing styles.
+* improving on the segmentation and preprocessing done with opencv4.
+* or changing the model to one that can interpret characters in sequence.
+
 ---
 
 #### Training data
