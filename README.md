@@ -9,6 +9,18 @@ a locally trained and executed HTR model.
 
 ### Training
 
+The model was trained on the EMNIST-balanced dataset, which<br/>
+includes handwritten samples of digits as well as both upper- and<br/>
+lowercase letter. The image data was normalized before training to<br/>
+better fit the CNN algorithm, such as scaling the pixel values from<br/>
+the original range of 0-255 to 0-1.
+
+The model was trained to a Convolutional Neural Network (CNN) that consists<br/>
+of several convolutional layers for deature extraction,<br/>
+pooling layers for downsampling, and dense layers for classification.<br/>
+Training was done for 10 epochs using the Adam optimizer and<br/>
+categorical crossentropy loss.
+
 ### Execution
 
 Input image is segmented into individual characters and preprocessed<br/>
